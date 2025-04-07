@@ -1,95 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christensen Investment Analytics</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
+    /* General Styles */
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       background-color: #f9f9f9;
+      color: #333;
     }
-
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Header Section */
     header {
-      background-color: #1a1a1a;
+      background: #1a1a1a;
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 2rem;
     }
-
     header h1 {
       margin: 0;
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
     }
-
+    /* Start Section */
+    .start-section {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: #007BFF;
+      color: white;
+    }
+    /* About Section */
+    .about-section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    /* Features Section */
     .features-section {
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
       max-width: 1200px;
       margin: auto;
     }
-
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
     }
-
     .feature-card {
-      background-color: white;
+      background: white;
       padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
+    /* Subscription Section */
+    .subscription-section {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: #f4f4f4;
     }
-
-    .feature-card h3 {
-      margin-top: 0;
-      font-family: 'Playfair Display', serif;
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 600px;
+      margin: auto;
+      gap: 2rem;
+    }
+    .pricing-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Contact Section */
+    .contact-section {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background: #007BFF;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1a1a1a;
+      color: white;
     }
   </style>
 </head>
 <body>
-
+  <!-- Header -->
   <header>
     <h1>Christensen Investment Analytics</h1>
-    <p>Your partner in modern financial intelligence</p>
+    <p>Your Trusted Partner in Financial Intelligence</p>
   </header>
-
+  <!-- Start Section -->
+  <section class="start-section">
+    <h2>Invest Smarter, Not Harder</h2>
+    <p>Powerful tools to drive your financial success.</p>
+  </section>
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>Christensen Investment Analytics is a SaaS platform providing cutting-edge tools for investors and financial professionals worldwide.</p>
+  </section>
+  <!-- Features Section -->
   <section class="features-section">
+    <h2>Features</h2>
     <div class="features-grid">
       <div class="feature-card">
-        <h3>Real-time Market Data</h3>
-        <p>Access up-to-the-minute market data from global exchanges and asset classes.</p>
+        <h3>Economic Indicators</h3>
+        <p>Track and analyze key global economic metrics.</p>
       </div>
       <div class="feature-card">
-        <h3>Custom Screeners</h3>
-        <p>Create custom stock screeners based on fundamentals, technicals, and more.</p>
+        <h3>News & Research</h3>
+        <p>Stay updated with in-depth financial news and market research.</p>
       </div>
       <div class="feature-card">
-        <h3>Portfolio Management</h3>
-        <p>Track your investments with detailed performance metrics and analytics.</p>
+        <h3>Stock Lookup</h3>
+        <p>Easily find detailed information on stocks worldwide.</p>
       </div>
       <div class="feature-card">
-        <h3>Global Markets</h3>
-        <p>Access data and insights from markets around the world.</p>
+        <h3>Portfolio Tracking</h3>
+        <p>Manage your portfolio and create custom watchlists and indexes.</p>
       </div>
       <div class="feature-card">
-        <h3>News and Research</h3>
-        <p>Stay informed with the latest financial news and research.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Custom Watchlists</h3>
-        <p>Create and monitor personalized lists of securities.</p>
+        <h3>Market Overview</h3>
+        <p>Get insights into commodities, currencies, and more.</p>
       </div>
     </div>
   </section>
-
+  <!-- Subscription Section -->
+  <section class="subscription-section">
+    <h2>Subscription Plans</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Standard Plan</h3>
+        <p>$24.99/month</p>
+        <p>Access all features and tools.</p>
+      </div>
+      <div class="pricing-card">
+        <h3>Custom Plan</h3>
+        <p>Contact us for more information and custom pricing.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us anytime.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Christensen Investment Analytics. All rights reserved.</p>
+  </footer>
 </body>
 </html>
