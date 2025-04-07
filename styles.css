@@ -20,13 +20,47 @@ h2 {
     color: #4CAF50;
 }
 
+.subscription-plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .plan {
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-button {
+.plan h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 16px;
+    color: #666;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.button {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -34,8 +68,17 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #45a049;
+}
+
+.most-popular {
+    background-color: #0056b3;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 footer {
